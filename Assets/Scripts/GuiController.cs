@@ -128,7 +128,7 @@ public class GuiController : MonoBehaviour {
 		content.image = icon;
 		GUILayout.Label (content);
 
-		if (GUILayout.Button ("关闭",GUILayout.Height(30),GUILayout.Width(50))) {
+		if (GUILayout.Button ("关闭",GUILayout.Height(30),GUILayout.Width(50))) {//去掉关闭按钮skin，调整按钮大小
 			showOrderWindow = false;
 		}
 		GUILayout.EndHorizontal ();
