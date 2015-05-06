@@ -85,7 +85,7 @@ public class GuiController : MonoBehaviour {
 
 
 		if (showOrderWindow) {
-			int w = 400, h = 300;
+			int w = Screen.width*2/3, h = Screen.height*3/4;
 			int x = (Screen.width-w)/2;
 			int y = (Screen.height-h)/2;
 
@@ -128,7 +128,7 @@ public class GuiController : MonoBehaviour {
 		content.image = icon;
 		GUILayout.Label (content);
 
-		if (GUILayout.Button ("", "STYLE_BTN_CLOSE")) {
+		if (GUILayout.Button ("关闭",GUILayout.Height(30),GUILayout.Width(50))) {
 			showOrderWindow = false;
 		}
 		GUILayout.EndHorizontal ();
